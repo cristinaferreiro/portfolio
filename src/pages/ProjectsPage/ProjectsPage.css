@@ -1,0 +1,95 @@
+.projectPage {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    background-color: #222906;
+
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 10px;
+    background-color: #222906;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.homecard {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    width: 100%;
+    height: 60vh;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.image-container {
+    flex: 1;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    color: #222906;
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: transparent;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.vertical-text {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 1.1rem;
+    color: rgba(19, 18, 18, 0.1);
+    transform: rotate(180deg);
+    white-space: normal;
+    line-height: 1.5;
+    width: auto;
+    max-width: auto;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .homecard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-container,
+    .content {
+        width: 100%;
+
+    }
+}
